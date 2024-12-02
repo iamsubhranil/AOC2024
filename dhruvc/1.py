@@ -1,0 +1,2 @@
+print(sum((lambda x:map(lambda x,y:abs(x-y),sorted(map(lambda x:x[1],x)),sorted(map(lambda x:x[0],x))))([*map(lambda x:(int(x[0]),int(x[1])),map(lambda x:x.split('   '),open("1.txt").readlines()))])))
+print((lambda y:(lambda d,e:sum(x*d[x]*e[x]for x in d.keys()if x in e.keys()))((lambda i:dict((x,i.count(x))for x in set(i)))([*map(lambda x:int(x[0]),y)]),(lambda j:dict((x,j.count(x))for x in set(j)))([*map(lambda x:int(x[1]),y)])))([*map(lambda x:x.split('   '),open("1.txt").readlines())]))
