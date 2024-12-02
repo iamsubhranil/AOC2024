@@ -1,0 +1,1 @@
+print(sum((lambda x:map(lambda x,y:abs(x-y),sorted(map(lambda x:x[1],x)),sorted(map(lambda x:x[0],x))))([*map(lambda x:(int(x[0]),int(x[1])),map(lambda x:x.split('   '),open("1-1.txt").readlines()))])))
